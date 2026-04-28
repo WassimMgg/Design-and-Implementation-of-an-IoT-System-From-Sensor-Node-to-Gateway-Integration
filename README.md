@@ -26,7 +26,7 @@ This repository contains the LaTeX source code and all associated images for the
 
 ```
 iot_report/
-├── iot_report.tex       # Main LaTeX source file
+├── main.tex       # Main LaTeX source file
 ├── images/              # All figures used in the report
 │   ├── p1_*.jpg/png     # Part 1 images (ESP32 node)
 │   ├── p2_*.jpg/png     # Part 2 images (Raspberry Pi gateway)
@@ -46,8 +46,8 @@ iot_report/
 ### Option 2 — Local (pdflatex)
 Make sure you have a LaTeX distribution installed (e.g. TeX Live or MiKTeX), then run:
 ```bash
-pdflatex iot_report.tex
-pdflatex iot_report.tex   # run twice to resolve references
+pdflatex main.tex
+pdflatex main.tex   # run twice to resolve references
 ```
 
 ---
@@ -72,5 +72,4 @@ pdflatex iot_report.tex   # run twice to resolve references
 
 ## Notes
 
-- Two placeholder figures remain in the report (marked with `\fbox`) and can be replaced by adding the corresponding image to the `images/` folder and swapping the `\fbox{\parbox{...}}` block with `\includegraphics{filename}`.
 - The Wi-Fi credentials and MQTT broker IP in the Part 3 source code are specific to the lab environment and should be updated before reuse.
